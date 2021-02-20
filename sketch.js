@@ -15,10 +15,9 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 	
-	paperObject = new Paper(200,450,70);
 	groundObject = new Ground(width/2,670,width,20);
 	dustbinObj = new Dustbin(1200,650);
-	
+	paperObject = new Paper(200,450,70);
 
 	var render = Render.create({
 	  element: document.body,
@@ -40,10 +39,9 @@ function draw() {
   rectMode(CENTER);
   background(230);
    
-  paperObject.display();
   groundObject.display();
   dustbinObj.display();
-
+  paperObject.display();
 }
 
 function keyPressed() {
